@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>258</y>
+      <w>126</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>documentstructure.com
+Web Application
+--
+Server Host: DigitalOcean
+Back End: Node.js
+Front End: React
+Database Host: Namecheap
+Database: MySQL</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>582</x>
+      <y>534</y>
+      <w>132</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>IDP Button
+Front End React Component
+--
+- User selects files
+- Structure selected files 
+based on the contents</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>510</x>
+      <y>294</y>
+      <w>84</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>948</x>
+      <y>270</y>
+      <w>138</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Authenticate User</panel_attributes>
+    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>234</x>
+      <y>384</y>
+      <w>210</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>SharePoint REST API
+--
+https://{tenant-name}.sharepoint.com/_api/v2.0/sites
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1074</x>
+      <y>210</y>
+      <w>210</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>Microsoft Entra
+--
+- Register Application
+- Obtain Application ID
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1074</x>
+      <y>258</y>
+      <w>210</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>Microsoft OAuth 2.0 Server
+--
+URL?
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>948</x>
+      <y>282</y>
+      <w>138</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Authenticated</panel_attributes>
+    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>438</x>
+      <y>390</y>
+      <w>156</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Directory Listing Request</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>438</x>
+      <y>402</y>
+      <w>156</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Directory List of Files</panel_attributes>
+    <additional_attributes>240.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>438</x>
+      <y>414</y>
+      <w>156</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+File Request</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>438</x>
+      <y>426</y>
+      <w>156</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+File URI</panel_attributes>
+    <additional_attributes>240.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>642</x>
+      <y>444</y>
+      <w>48</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+File URI</panel_attributes>
+    <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>708</x>
+      <y>582</y>
+      <w>126</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Extracted Document Data
+JSON
+</panel_attributes>
+    <additional_attributes>10.0;20.0;190.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>822</x>
+      <y>462</y>
+      <w>168</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>File Refactoring
+Back End Component
+--
+- Change file path
+- Change file name</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>252</x>
+      <y>444</y>
+      <w>582</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Folder Creation and Naming Execution</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0;950.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>444</y>
+      <w>564</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+File Creation and Naming Execution</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;920.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>702</x>
+      <y>498</y>
+      <w>132</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Document Data
+</panel_attributes>
+    <additional_attributes>200.0;20.0;10.0;20.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>834</x>
+      <y>744</y>
+      <w>156</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>Visual Language Model (VLM)
+--
+Gemini
+Prompt:
+What is the address?
+What is the vendor name?
+What is the date?
+How much was the total cost?</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>876</x>
+      <y>612</y>
+      <w>72</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Image
+From Invoices
+From Receipts</panel_attributes>
+    <additional_attributes>20.0;220.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>936</x>
+      <y>612</y>
+      <w>54</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Answer
+Content</panel_attributes>
+    <additional_attributes>10.0;10.0;30.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>666</x>
+      <y>738</y>
+      <w>144</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>Visual Language Model (VLM)
+--
+Gemini
+Prompt:
+What type of document is this?
+An invoice or receipt?</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>732</x>
+      <y>612</y>
+      <w>108</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Image</panel_attributes>
+    <additional_attributes>10.0;210.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>774</x>
+      <y>612</y>
+      <w>108</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Answer
+Classification</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>942</x>
+      <y>612</y>
+      <w>108</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Text
+From Contracts</panel_attributes>
+    <additional_attributes>120.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1008</x>
+      <y>612</y>
+      <w>84</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Answer
+Content</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1002</x>
+      <y>690</y>
+      <w>156</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>Large Language Model (LLM)
+--
+Gemini
+Prompt:
+What is the address?
+What is Party A Name?
+What is the vendor name?
+What is the date signed by party A?
+What is the date signed by vendor?</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>582</x>
+      <y>258</y>
+      <w>132</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Front End
+Single Page Application (SPA)
+--
+Front End: React</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>582</x>
+      <y>366</y>
+      <w>132</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Directory File List
+Front End React Component
+--
+Front End: React</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>822</x>
+      <y>258</y>
+      <w>132</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>User Session
+--
+Microsoft Session Token
+MySQL Session Token</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>642</x>
+      <y>336</y>
+      <w>18</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>822</x>
+      <y>366</y>
+      <w>132</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Directory File List
+Back End Component
+--
+Back End: Node.js</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1074</x>
+      <y>306</y>
+      <w>210</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>MySQL Server
+--
+OpenID Connect (OIDC)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>948</x>
+      <y>306</y>
+      <w>138</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Authenticate User</panel_attributes>
+    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>948</x>
+      <y>318</y>
+      <w>138</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Authenticated</panel_attributes>
+    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1074</x>
+      <y>366</y>
+      <w>210</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>MySQL Server
+--
+OpenID Connect (OIDC)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>882</x>
+      <y>336</y>
+      <w>18</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>708</x>
+      <y>396</y>
+      <w>126</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Cache File Meta Data</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>948</x>
+      <y>396</y>
+      <w>138</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Store File Meta Data</panel_attributes>
+    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>558</x>
+      <y>318</y>
+      <w>36</w>
+      <h>282</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>40.0;450.0;10.0;450.0;10.0;10.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>822</x>
+      <y>528</y>
+      <w>198</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Intelligent Document Processing (IDP)
+Back End Component
+--
+Python Script
+using ExtractThinker
+- Document Loader: Google Document AI
+- Classification
+- Splitting
+- Extraction</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>708</x>
+      <y>564</y>
+      <w>126</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+File URI</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>
